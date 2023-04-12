@@ -46,7 +46,7 @@ function gunFerqi(tarix1, tarix2) {
     const tarix2Millisaniye = new Date(tarix2).getTime();
     const tarix1Millisaniye = new Date(tarix1).getTime();
     let millisaniyeFerqi = tarix2Millisaniye - tarix1Millisaniye
-    return Math.round(millisaniyeFerqi / (1000 * 60 * 60 * 24))
+    return Math.round(millisaniyeFerqi / 86400000) // 1 gun 86400000 millisaniye beraberdir
 }
 
 console.log(gunFerqi("2023-01-01", "2023-01-10"))
