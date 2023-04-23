@@ -76,16 +76,14 @@ function getAllAlbumsById(userId) {
 }
 function Main() {
     return __awaiter(this, void 0, void 0, function () {
-        var _a, _b;
-        return __generator(this, function (_c) {
-            switch (_c.label) {
+        return __generator(this, function (_a) {
+            switch (_a.label) {
                 case 0: return [4 /*yield*/, getAllPostsById(1)];
                 case 1:
-                    _c.sent();
-                    _b = (_a = console).log;
+                    _a.sent();
                     return [4 /*yield*/, getAllAlbumsById(1)];
                 case 2:
-                    _b.apply(_a, [_c.sent()]);
+                    _a.sent();
                     return [2 /*return*/];
             }
         });
